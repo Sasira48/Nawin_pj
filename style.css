@@ -21,37 +21,21 @@ header {
                                              
 }
 
-/*navbar*/
-.navbar {
-    overflow: hidden;
+/*flexbox */
+.flex-container {
+      overflow: hidden;
     display: flex;
     justify-content: flex-end;
     background-color: #832626;
-}
-.navbar a {
-    float: right;
+    }
+.flex-item {
+      float: right;
     display: block;
     font-size: 20px;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
-
-/*flexbox */
-.flex-container {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      background-color: #f2f2f2;
-      height: 100px;
-    }
-.flex-item {
-      background-color: rgb(170, 61, 61);
-      color: white;
-      padding: 20px;
-      margin: 5px;
-      border-radius: 8px;
     }
 
 /* food list*/
@@ -63,6 +47,33 @@ header {
     padding: 20px;
     margin: 5px;
 }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      background-color: #ddd;
+      padding: 10px;
+    }
+    .grid-item {
+      background-color: rgb(170, 61, 61);
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    a {
+      color: white;
+      text-decoration: none; /* ไม่ขีดเส้นใต้ */
+    }
+
+    a:hover {
+      color: #ffcccb; /* สีเวลาชี้เมาส์, แล้วแต่ความชอบ */
+      text-decoration: underline; /* หรือ none ก็ได้ */
+    }
+
+
+
 .food-item {
     background: white;
     border-radius: 8px;
