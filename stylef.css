@@ -1,0 +1,75 @@
+body {
+    font-family: "Itim", sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(170, 61, 61);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* ให้เต็มหน้าจอ */
+    text-align: center;
+    }
+
+        h2 {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 40px;
+            border-radius: 20px;
+            width: 400px;
+            text-align: left;
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        input[type="text"] {
+            font-family: "Itim", sans-serif;
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            background: white;
+            color: rgb(82, 80, 80);
+        }
+
+        
+        button {
+                font-family: "Itim", sans-serif;
+                font-size: 30px;
+                padding: 10px 20px;
+                background-color: rgb(122, 22, 22);
+                color: white;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+
+            button:hover {
+                background-color: rgb(170, 61, 61);
+                font-family: "Itim", sans-serif;
+                font-size: 30px;
+            }
+
+            #welcomeMessage {
+                margin-top: 20px;
+                color: white;
+                font-size: 30px;
+            }
+
+            #goToMain {
+                display: none; /* ซ่อนปุ่มไว้ก่อน */
+            }   
