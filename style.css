@@ -21,6 +21,35 @@ header {
                                              
 }
 
+    .menu-logo img {
+      height: 50px;
+      margin-right: 20px;
+    }
+
+    .menu-item {
+    display: block;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+        padding: 25px;
+    }
+
+    .menu-item img {
+      width: 32px;
+      height: 32px;
+      margin-bottom: 5px;
+    }
+
+    .menu-container {
+        padding: 20px;
+      overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #832626;
+    }
+
 /*flexbox */
 .flex-container {
       overflow: hidden;
@@ -172,11 +201,3 @@ header {
   }
 
 
-/* Footer */
-footer {
-    background: rgb(170, 61, 61);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: auto;
-}

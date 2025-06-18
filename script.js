@@ -23,4 +23,7 @@ window.onload = () => {
         goToMainButton.style.display = "inline-block";
         });
     }
+
+
+    
 }
