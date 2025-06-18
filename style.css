@@ -17,55 +17,74 @@ header {
     background-color: rgb(170, 61, 61);
     color: white;
     text-align: center;
-    padding: 20px 10px; 
-                                             
+    padding: 20px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 20px;
 }
 
-    .menu-logo img {
-      height: 50px;
-      margin-right: 20px;
-    }
-
-    .menu-item {
-    display: block;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-        padding: 25px;
-    }
-
-    .menu-item img {
-      width: 32px;
-      height: 32px;
-      margin-bottom: 5px;
-    }
-
-    .menu-container {
-        padding: 20px;
-      overflow: hidden;
-    display: flex;
-    justify-content: flex-end;
-    background-color: #832626;
-    }
-
-/*flexbox */
+/* เมนูด้านบน */
 .flex-container {
-      overflow: hidden;
     display: flex;
-    justify-content: flex-end;
+    gap: 20px;
+    justify-content: center;
     background-color: #832626;
-    }
-.flex-item {
-      float: right;
-    display: block;
+    padding: 10px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 0 20px 20px 20px;
+}
+
+.flex-item a {
     font-size: 20px;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 20px;
     text-decoration: none;
-    }
+    display: inline-block;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 8px;
+}
+
+.flex-item a:hover {
+    background-color: #aa3d3d;
+    color: #fff;
+}
+
+/* กล่องเมนูอาหาร */
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 20px 20px 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.menu-item {
+    width: 160px;
+    text-align: center;
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
 
 /* food list*/
 .food-list {
