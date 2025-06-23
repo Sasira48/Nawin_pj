@@ -23,7 +23,23 @@ window.onload = () => {
         goToMainButton.style.display = "inline-block";
         });
     }
+     // สไลด์โชว์
+    // ต้องประกาศ slideshow ว่ามีหรือไม่ เช่น
+    const slideshow = document.getElementsByClassName("mySlides");
+    if (slideshow.length > 0) {
+        let myIndex = 0;
+        carousel();
 
+        function carousel() {
+            for (let i = 0; i < slideshow.length; i++) {
+                slideshow[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > slideshow.length) {myIndex = 1}    
+            slideshow[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000); // เปลี่ยนภาพทุก 2 วินาที
+        }
+    }
 
     
 }
