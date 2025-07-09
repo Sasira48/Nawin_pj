@@ -15,6 +15,51 @@ body {
     height: 100vh; /* ให้เต็มหน้าจอ */
     text-align: center;
     }
+    .logo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 0 #000000;
+    }
+
+    .logo .eng {
+    font-family: 'Pacifico', cursive;
+    }
+
+    .logo .thai {
+    font-family: 'Itim', cursive;
+    }
+
+    .top-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px; /* ระยะห่างระหว่างปุ่ม */
+    }
+
+    .top-buttons a {
+    background-color: #d6d6e0;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Itim', cursive;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+    }
+
+    .top-buttons a:hover {
+    background-color: #aa3d3d;
+    color: #fff;
+    }
+
 
         h2 {
             font-size: 60px;
