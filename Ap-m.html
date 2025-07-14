@@ -16,10 +16,46 @@
             <h1>เมนูอาหารทานเล่น (Appetizers)</h1>
         </header>
         <div class="flex-container">
-            <div class="flex-item"><a href="home.html">หน้าหลัก</a></div>
-            <div class="flex-item"><a href="home.html">ตะกร้าของฉัน</a></div>
-            <div class="flex-item"><a href="home.html">บริการ</a></div>
-            
+          <div class="search-wrapper">
+            <i class="fa fa-magnifying-glass"></i>
+              <input type="text" id="searchInput" placeholder="search"> <button class="search-btn" onclick="searchRedirect()">ค้นหา</button>
+              <div class="slash-key"></div>
+          </div>
+          <script>
+              function searchRedirect() {
+                  const searchValue = document.getElementById('searchInput').value.toLowerCase();
+
+                  // แมพชื่อกับลิงก์
+                  const pages = {
+                      'ส้มตำ': 'pas-m.html',
+                      'ตำ': 'pas-m.html',
+                      'ของหวาน': 'ds-m.html',
+                      'ขนม': 'ds-m.html',
+                      'เครื่องดื่ม': 'bv-m.html',
+                      'น้ำ': 'bv-m.html',
+                      'อาหารทานเล่น': 'Ap-m.html',
+                      'ของคาว': 'mc-m.html',
+                      'อาหารหลัก': 'mc-m.html',
+                      'ข้าว': 'mc-m.html'
+                  };
+
+                  let found = false;
+                  for (const keyword in pages) {
+                      if (searchValue.includes(keyword)) {
+                          window.location.href = pages[keyword];
+                          found = true;
+                          break;
+                      }
+                  }
+
+                  if (!found) {
+                      alert('ไม่พบหมวดหมู่นี้');
+                  }
+              }
+          </script>
+          <div class="flex-item"><a href="home.html">หน้าหลัก</a></div>
+          <div class="flex-item"><a href="home.html">ตะกร้าของฉัน</a></div>
+          <div class="flex-item"><a href="home.html">บริการ</a></div>
         </div>
         <div class="food-list">
             <div class="food-item">
