@@ -40,6 +40,5 @@ window.onload = () => {
             setTimeout(carousel, 2000); // เปลี่ยนภาพทุก 2 วินาที
         }
     }
-
-    
+   
 }

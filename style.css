@@ -27,7 +27,7 @@ header {
 .flex-container {
     display: flex;
     gap: 20px;
-    justify-content: center;
+    justify-content: right;
     background-color: #832626;
     padding: 10px 0;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -38,11 +38,11 @@ header {
 .flex-item a {
     font-size: 20px;
     color: white;
-    text-align: center;
+    text-align: right;
     padding: 10px 20px;
     text-decoration: none;
     display: inline-block;
-    transition: background 0.3s, color 0.3s;
+    transition:  0.3s, color 0.3s;
     border-radius: 8px;
 }
 
@@ -50,6 +50,66 @@ header {
     background-color: #aa3d3d;
     color: #fff;
 }
+.search-container {
+            max-width: 600px;
+            margin: 80px auto;
+            text-align: center;
+        }
+
+        .search-container h2 {
+            margin-bottom: 20px;
+            color: #aa3d3d;
+        }
+
+        .search-box {
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-box input[type="text"] {
+            width: 70%;
+            padding: 12px;
+            border: 2px solid #aa3d3d;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+        }
+
+        .search-box button {
+            padding: 12px 20px;
+            border: none;
+            background-color: #aa3d3d;
+            color: white;
+            cursor: pointer;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .search-box button:hover {
+            background-color: #922b2b;
+        }
+
+        .result {
+            margin-top: 30px;
+            text-align: left;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .result ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .result li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .result li:last-child {
+            border-bottom: none;
+        }
 
 /* กล่องเมนูอาหาร */
 .menu-container {
