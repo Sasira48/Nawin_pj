@@ -19,97 +19,79 @@ header {
     text-align: center;
     padding: 20px 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px;
     margin-bottom: 20px;
 }
 
 /* เมนูด้านบน */
 .flex-container {
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
     gap: 20px;
-    justify-content: right;
     background-color: #832626;
-    padding: 10px 0;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 10px 20px;
     border-radius: 10px;
-    margin: 0 20px 20px 20px;
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.search-wrapper input {
+    border: none;
+    padding: 10px 15px;
+    outline: none;
+    font-size: 16px;
+    font-family: "Itim", sans-serif;
+    border-radius: 20px 0 0 20px;
+}
+
+.search-wrapper .search-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #aa3d3d;
+    color: white;
+    font-family: "Itim", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+    transition: background-color 0.3s;
+}
+
+.search-wrapper .search-btn:hover {
+    background-color: #922b2b;
 }
 
 .flex-item a {
-    font-size: 20px;
+    font-size: 18px;
     color: white;
-    text-align: right;
-    padding: 10px 20px;
     text-decoration: none;
-    display: inline-block;
-    transition:  0.3s, color 0.3s;
+    padding: 10px 15px;
     border-radius: 8px;
+    transition: background-color 0.3s;
 }
 
 .flex-item a:hover {
     background-color: #aa3d3d;
-    color: #fff;
 }
-.search-container {
-            max-width: 600px;
-            margin: 80px auto;
-            text-align: center;
-        }
 
-        .search-container h2 {
-            margin-bottom: 20px;
-            color: #aa3d3d;
-        }
 
-        .search-box {
-            display: flex;
-            justify-content: center;
-        }
+.result {
+    margin-top: 30px;
+    text-align: left;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
 
-        .search-box input[type="text"] {
-            width: 70%;
-            padding: 12px;
-            border: 2px solid #aa3d3d;
-            border-radius: 5px 0 0 5px;
-            outline: none;
-        }
 
-        .search-box button {
-            padding: 12px 20px;
-            border: none;
-            background-color: #aa3d3d;
-            color: white;
-            cursor: pointer;
-            border-radius: 0 5px 5px 0;
-        }
-
-        .search-box button:hover {
-            background-color: #922b2b;
-        }
-
-        .result {
-            margin-top: 30px;
-            text-align: left;
-            padding: 20px;
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-        }
-
-        .result ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .result li {
-            padding: 8px 0;
-            border-bottom: 1px solid #eee;
-        }
-
-        .result li:last-child {
-            border-bottom: none;
-        }
 
 /* กล่องเมนูอาหาร */
 .menu-container {
@@ -118,16 +100,17 @@ header {
     justify-content: center;
     gap: 20px;
     padding: 20px;
-    margin: 0 20px 20px 20px;
+    margin: 20px 0 20px 0;
     background-color: #fff;
-    border-radius: 12px;
+    border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .menu-item {
-    width: 160px;
+    width: 220px;
+    height: 100px;
     text-align: center;
-    background-color: #fafafa;
+    background-color: #ebdede;
     padding: 15px;
     border-radius: 10px;
     text-decoration: none;
@@ -141,9 +124,10 @@ header {
 }
 
 .menu-item img {
-    width: 50px;
+    width: 70px;
     height: 50px;
     margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 /* food list*/
@@ -151,6 +135,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    border-radius: 10px;
     justify-content: center;
     padding: 20px;
     margin: 5px;
@@ -184,7 +169,7 @@ header {
 
 .food-item {
     background: white;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     width: 220px;
     display: flex;
@@ -279,4 +264,70 @@ header {
     font-weight: bold;
   }
 
+.footer {
+  background-color: rgb(170, 61, 61);
+  color: white;
+  padding: 40px 20px;
+  font-family: "Itim", sans-serif;
+  border-radius: 10px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-icons span {
+  margin-right: 10px;
+}
+
+.subscribe {
+  display: flex;
+  margin-top: 10px;
+  max-width: 300px;
+}
+
+.subscribe input {
+  padding: 10px;
+  flex: 1;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+}
+
+.subscribe button {
+  padding: 10px 20px;
+  border: none;
+  background: white;
+  color: #aa3d3d;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.subscribe button:hover {
+  background-color: #922b2b;
+  color: white;
+}
 

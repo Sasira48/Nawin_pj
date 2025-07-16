@@ -17,53 +17,25 @@
             <h1>Katoey_กะเตย</h1>
         </header>
         <div class="flex-container">
-          <div class="search-wrapper">
-            <i class="fa fa-magnifying-glass"></i>
-              <input type="text" id="searchInput" placeholder="search"> <button class="search-btn" onclick="searchRedirect()">ค้นหา</button>
-              <div class="slash-key"></div>
-          </div>
-          <script>
-              function searchRedirect() {
-                  const searchValue = document.getElementById('searchInput').value.toLowerCase();
-
-                  // แมพชื่อกับลิงก์
-                  const pages = {
-                      'ส้มตำ': 'pas-m.html',
-                      'ตำ': 'pas-m.html',
-                      'ของหวาน': 'ds-m.html',
-                      'ขนม': 'ds-m.html',
-                      'เครื่องดื่ม': 'bv-m.html',
-                      'น้ำ': 'bv-m.html',
-                      'อาหารทานเล่น': 'Ap-m.html',
-                      'ของคาว': 'mc-m.html',
-                      'อาหารหลัก': 'mc-m.html',
-                      'ข้าว': 'mc-m.html'
-                  };
-
-                  let found = false;
-                  for (const keyword in pages) {
-                      if (searchValue.includes(keyword)) {
-                          window.location.href = pages[keyword];
-                          found = true;
-                          break;
-                      }
-                  }
-
-                  if (!found) {
-                      alert('ไม่พบหมวดหมู่นี้');
-                  }
-              }
-          </script>
-          <div class="flex-item"><a href="home.html">หน้าหลัก</a></div>
-          <div class="flex-item"><a href="home.html">ตะกร้าของฉัน</a></div>
-          <div class="flex-item"><a href="home.html">บริการ</a></div>
+        <div class="search-wrapper">
+            <i class="fa fa-search" style="padding-left: 10px; color: #aaa;"></i>
+            <input type="text" id="searchInput" placeholder="ค้นหาเมนู...">
+            <button class="search-btn" onclick="searchRedirect()">ค้นหา</button>
         </div>
-        <div class="w3-content w3-section" style="width:100%;">
-          <img class="mySlides" src="1.png" style="width:100%">
-          <img class="mySlides" src="2.png" style="width:100%">
-          <img class="mySlides" src="3.png" style="width:100%">
-          <img class="mySlides" src="4.png" style="width:100%">
-          <img class="mySlides" src="5.png" style="width:100%">
+
+        <div class="flex-item"><a href="home.html">หน้าหลัก</a></div>
+        <div class="flex-item"><a href="home.html">ตะกร้าของฉัน</a></div>
+        <div class="flex-item"><a href="home.html">บริการ</a></div>
+        </div>
+
+
+        
+        <div class="w3-content w3-section" >
+          <img class="mySlides" src="1.png" style="width:100%; border-radius: 10px;">
+          <img class="mySlides" src="2.png" style="width:100%; border-radius: 10px;">
+          <img class="mySlides" src="3.png" style="width:100%; border-radius: 10px;">
+          <img class="mySlides" src="4.png" style="width:100%; border-radius: 10px;">
+          <img class="mySlides" src="5.png" style="width:100%; border-radius: 10px;">
           <script src="script.js"></script>
         </div>
        
@@ -91,14 +63,13 @@
             </div>
     
         <!-- Footer Section -->
-<footer style="background-color: rgb(170, 61, 61); gap: 20px; color: white; padding: 40px 20px; font-family: sans-serif;">
-  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto;">
+<footer class="footer">
+  <div class="footer-container">
 
-    <!-- เกี่ยวกับเรา -->
-    <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
-      <img src="AnyConv.com__101.2.ico" alt="Katoey_กะเตย" style="width: 50px; margin-bottom: 10px;">
+    <div class="footer-section">
+      <img src="AnyConv.com__101.2.ico" alt="Katoey_กะเตย">
       <h3>เกี่ยวกับเรา</h3>
-      <ul style="list-style: none; padding: 0;">
+      <ul>
         <li>รู้จัก Katoey_กะเตย</li>
         <li>ร่วมงานกับเรา</li>
         <li>ร่วมธุรกิจกับ Katoey_กะเตย</li>
@@ -107,10 +78,9 @@
       </ul>
     </div>
 
-    <!-- ช่วยเหลือ -->
-    <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+    <div class="footer-section">
       <h3>ช่วยเหลือ</h3>
-      <ul style="list-style: none; padding: 0;">
+      <ul>
         <li>คำถามที่พบบ่อย</li>
         <li>คอลเซ็นเตอร์ 08********</li>
         <li>บริการสมาชิก 02******</li>
@@ -118,25 +88,19 @@
       </ul>
     </div>
 
-    <!-- ติดตามเรา -->
-    <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+    <div class="footer-section">
       <h3>ติดตามเรา</h3>
-      <div style="margin-bottom: 10px;">
-        <span style="margin-right: 10px;">📘</span>
-        <span style="margin-right: 10px;">🐦</span>
-        <span style="margin-right: 10px;">📺</span>
-        <span style="margin-right: 10px;">📸</span>
-        <span>💬</span>
+      <div class="social-icons">
+        <span>📘</span><span>🐦</span><span>📺</span><span>📸</span><span>💬</span>
       </div>
       <p>รับโปรโมชั่นและดีลพิเศษก่อนใคร</p>
-      <form>
-        <input type="email" placeholder="ใส่อีเมลของคุณ" style="padding: 8px; border: none; border-radius: 5px;">
-        <button style="padding: 8px 12px; border: none; background: white; color: #006241; border-radius: 5px;">เข้าร่วม</button>
-      </form>
+      <div class="subscribe">
+        <input type="email" placeholder="ใส่อีเมลของคุณ">
+        <button>เข้าร่วม</button>
+      </div>
     </div>
+
   </div>
 </footer>
- 
-   
 </body>
 </html>
