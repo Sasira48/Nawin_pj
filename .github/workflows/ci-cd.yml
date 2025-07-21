@@ -1,27 +1,16 @@
-name: CI/CD Pipeline Example
+name: Simple CI/CD Test
 
 on:
   push:
     branches: [main]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout source code
+      - name: Checkout source
         uses: actions/checkout@v4
-        
-      - name: Install dependencies
-        run: npm install
-        
-      - name: Build project
-        run: npm run build
-        
-      - name: Run tests
-        run: npm test
-        
-      - name: Lint code
-        run: npm run lint
-        
-      - name: Deploy
-        run: echo "Deploying..."
+
+      - name: Hello World Step
+        run: echo "✅ GitHub Actions ทำงานได้ปกติ"
+
