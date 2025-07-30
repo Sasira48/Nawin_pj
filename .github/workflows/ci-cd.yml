@@ -1,0 +1,16 @@
+name: Simple CI/CD Test
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Hello World Step
+        run: echo "✅ GitHub Actions ทำงานได้ปกติ"
+

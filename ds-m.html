@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="th"> 
+    <head>
+      <title>Home</title>
+      <link rel="icon" type="image/x-icon" href="icon.ico">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Itim&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">        
+    </head>
+    <body>
+        <header>
+            <h1>เมนูของหวาน (Desserts)</h1>
+        </header>
+       <div class="flex-container">
+          <div class="search-wrapper">
+            <i class="fa fa-magnifying-glass"></i>
+              <input type="text" id="searchInput" placeholder="search"> <button class="search-btn" onclick="searchRedirect()">ค้นหา</button>
+              <div class="slash-key"></div>
+          </div>
+          <script>
+              function searchRedirect() {
+                  const searchValue = document.getElementById('searchInput').value.toLowerCase();
+
+                  // แมพชื่อกับลิงก์
+                  const pages = {
+                      'ส้มตำ': 'pas-m.html',
+                      'ตำ': 'pas-m.html',
+                      'ของหวาน': 'ds-m.html',
+                      'ขนม': 'ds-m.html',
+                      'เครื่องดื่ม': 'bv-m.html',
+                      'น้ำ': 'bv-m.html',
+                      'อาหารทานเล่น': 'Ap-m.html',
+                      'ของคาว': 'mc-m.html',
+                      'อาหารหลัก': 'mc-m.html',
+                      'ข้าว': 'mc-m.html'
+                  };
+
+                  let found = false;
+                  for (const keyword in pages) {
+                      if (searchValue.includes(keyword)) {
+                          window.location.href = pages[keyword];
+                          found = true;
+                          break;
+                      }
+                  }
+
+                  if (!found) {
+                      alert('ไม่พบหมวดหมู่นี้');
+                  }
+              }
+          </script>
+          <div class="flex-item"><a href="home.html">หน้าหลัก</a></div>
+          <div class="flex-item"><a href="home.html">ตะกร้าของฉัน</a></div>
+          <div class="flex-item"><a href="home.html">บริการ</a></div>
+        </div>
+        <div class="food-list">
+            <div class="food-item">
+                <img class="food-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMgwrnkc0gWrjNWlekiS7q3IyfXrAxuLcw7g&s" alt="ข้าวเหนียวมะม่วง (Mango Sticky Rice)">
+                <div class="food-info">
+                    <div class="food-category">Desserts</div>
+                    <div class="food-name">ข้าวเหนียวมะม่วง (Mango Sticky Rice)</div>
+                    <div class="food-price">ราคา 89 บาท</div>
+                </div>
+            </div>
+            <div class="food-item">
+                <img class="food-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSMY31A1GNiH9vx-5OPvukz1jb5YNQgqFelA&s" alt="ทับทิมกรอบ (Water Chestnuts in Coconut Milk)">
+                <div class="food-info">
+                    <div class="food-category">Desserts</div>
+                    <div class="food-name">ทับทิมกรอบ (Water Chestnuts in Coconut Milk)</div>
+                    <div class="food-price">ราคา 89 บาท</div>
+                </div>
+            </div>
+            <div class="food-item">
+                <img class="food-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRak96yNAdGhNQ6nP3gpmLv2C0i6pokqiNYXg&s" alt="บัวลอยเผือก (Taro Rice Balls in Coconut Cream)">
+                <div class="food-info">
+                    <div class="food-category">Desserts</div>
+                    <div class="food-name">บัวลอยเผือก (Taro Rice Balls in Coconut Cream)</div>
+                    <div class="food-price">ราคา 89 บาท</div>
+                </div>
+            </div>
+            <div class="food-item">
+                <img class="food-image" src="https://www.shutterstock.com/image-photo/lod-chong-dessert-coconut-milk-260nw-481886590.jpg" alt="ลอดช่อง (Thai Pandan Noodles in Coconut Milk)">
+                <div class="food-info">
+                    <div class="food-category">Desserts</div>
+                    <div class="food-name">ลอดช่อง (Thai Pandan Noodles in Coconut Milk)</div>
+                    <div class="food-price">ราคา 89 บาท</div>
+                </div>
+            </div>
+            <div class="food-item">
+                <img class="food-image" src="https://www.pim.in.th/images/all-thai-dessert/thai-tea-custard/thai-tea-custard-16.JPG" alt="สังขยา (Thai Custard)">
+                <div class="food-info">
+                    <div class="food-category">Desserts</div>
+                    <div class="food-name">สังขยา (Thai Custard)</div>
+                    <div class="food-price">ราคา 89 บาท</div>
+                </div>
+            </div>
+            <div class="food-item">
+                <img class="food-image" src="https://www.calforlife.com/image/food/Banana-in-coconut-milk.jpg" alt="กล้วยบวชชี (Banana in Coconut Milk)">
+                <div class="food-info">
+                    <div class="food-category">Desserts</div>
+                    <div class="food-name">กล้วยบวชชี (Banana in Coconut Milk)</div>
+                    <div class="food-price">ราคา 89 บาท</div>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <img class="food-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-p1UnIQyiQlTWVRxpUd5JzG4ZUbAkisGshA&s" alt="ไอศกรีมกะทิ (Coconut Ice Cream)">
+                <div class="food-info">
+                    <div class="food-category">Desserts</div>
+                    <div class="food-name">ไอศกรีมกะทิ (Coconut Ice Cream)</div>
+                    <div class="food-price">ราคา 89 บาท</div>
+                </div>
+            </div>
+            <div class="food-item">
+                <img class="food-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjFHbPW-o06oAjd2O1N0rW4rnm5p_ZPRii9g&s" alt="ขนมถ้วย (Thai Coconut Custard)">
+                <div class="food-info">
+                    <div class="food-category">Desserts</div>
+                    <div class="food-name">ขนมถ้วย (Thai Coconut Custard)</div>
+                    <div class="food-price">ราคา 89 บาท</div>
+                </div>
+            </div>
+            <div class="food-item">
+                <img class="food-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAVrU7Fc83BuFEl3jMlDkx_gQ_TFmhfMB7og&s" alt="ขนมต้ม (Coconut Stuffed Rice Balls)">
+                <div class="food-info">
+                    <div class="food-category">Desserts</div>
+                    <div class="food-name">ขนมต้ม (Coconut Stuffed Rice Balls)</div>
+                    <div class="food-price">ราคา 89 บาท</div>
+                </div>
+            </div>
+            <div class="food-item">
+                <img class="food-image" src="https://plaavydessertcafe.com/wp-content/uploads/2024/06/669190_0.jpg" alt="เฉาก๊วย (Grass Jelly)">
+                <div class="food-info">
+                    <div class="food-category">Desserts</div>
+                    <div class="food-name">เฉาก๊วย (Grass Jelly)</div>
+                    <div class="food-price">ราคา 89 บาท</div>
+                </div>
+            </div>
+            <div class="food-item">
+                <img class="food-image" src="https://www.lionbrand.com.au/wp-content/uploads/2022/07/Feature-Image-Thai-Layered-Dessert-Recipe.jpg" alt="ขนมชั้น (Thai Layered Jelly)">
+                <div class="food-info">
+                    <div class="food-category">Desserts</div>
+                    <div class="food-name">ขนมชั้น (Thai Layered Jelly)</div>
+                    <div class="food-price">ราคา 89 บาท</div>
+                </div>
+            </div>
+            <div class="food-item">
+                <img class="food-image" src="https://www.pholfoodmafia.com/wp-content/uploads/2018/05/9ThaiEggCustard-FilledPumpkin.jpg" alt="ฟักทองสังขยา (Pumpkin Custard)">
+                <div class="food-info">
+                    <div class="food-category">Desserts</div>
+                    <div class="food-name">ฟักทองสังขยา (Pumpkin Custard)</div>
+                    <div class="food-price">ราคา 89 บาท</div>
+                </div>
+            </div>
+        </div>
+     <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <img src="AnyConv.com__101.2.ico" alt="Katoey_กะเตย">
+      <h3>เกี่ยวกับเรา</h3>
+      <ul>
+        <li>รู้จัก Katoey_กะเตย</li>
+        <li>ร่วมงานกับเรา</li>
+        <li>ร่วมธุรกิจกับ Katoey_กะเตย</li>
+        <li>ข่าวและกิจกรรม</li>
+        <li>ข้อกำหนดและเงื่อนไขในการใช้บริการเว็บไซต์</li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>ช่วยเหลือ</h3>
+      <ul>
+        <li>คำถามที่พบบ่อย</li>
+        <li>คอลเซ็นเตอร์ 08********</li>
+        <li>บริการสมาชิก 02******</li>
+        <li>ติดต่อเรา</li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>ติดตามเรา</h3>
+      <div class="social-icons">
+        <span>📘</span><span>🐦</span><span>📺</span><span>📸</span><span>💬</span>
+      </div>
+      <p>รับโปรโมชั่นและดีลพิเศษก่อนใคร</p>
+      <div class="subscribe">
+        <input type="email" placeholder="ใส่อีเมลของคุณ">
+        <button>เข้าร่วม</button>
+      </div>
+    </div>
+
+  </div>
+</footer>
+</body>
+</html>

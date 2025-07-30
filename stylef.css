@@ -1,0 +1,120 @@
+body {
+    font-family: "Itim", sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(170, 61, 61);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* ให้เต็มหน้าจอ */
+    text-align: center;
+    }
+    .logo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 0 #000000;
+    }
+
+    .logo .eng {
+    font-family: 'Pacifico', cursive;
+    }
+
+    .logo .thai {
+    font-family: 'Itim', cursive;
+    }
+
+    .top-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px; /* ระยะห่างระหว่างปุ่ม */
+    }
+
+    .top-buttons a {
+    background-color: #d6d6e0;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Itim', cursive;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+    }
+
+    .top-buttons a:hover {
+    background-color: #aa3d3d;
+    color: #fff;
+    }
+
+
+        h2 {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 40px;
+            border-radius: 20px;
+            width: 400px;
+            text-align: left;
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        input[type="text"] {
+            font-family: "Itim", sans-serif;
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            background: white;
+            color: rgb(82, 80, 80);
+        }
+
+        
+        button {
+                font-family: "Itim", sans-serif;
+                font-size: 30px;
+                padding: 10px 20px;
+                background-color: rgb(122, 22, 22);
+                color: white;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+
+            button:hover {
+                background-color: rgb(170, 61, 61);
+                font-family: "Itim", sans-serif;
+                font-size: 30px;
+            }
+
+            #welcomeMessage {
+                margin-top: 20px;
+                color: white;
+                font-size: 30px;
+            }
+
+            #goToMain {
+                display: none; /* ซ่อนปุ่มไว้ก่อน */
+            }   

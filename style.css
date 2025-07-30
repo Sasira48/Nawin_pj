@@ -1,0 +1,333 @@
+/* ตั้งค่าเริ่มต้น */
+body {
+    font-family: "Itim", sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    font-size: 40px;
+    background-color: rgb(170, 61, 61);
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* เมนูด้านบน */
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    background-color: #832626;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.search-wrapper input {
+    border: none;
+    padding: 10px 15px;
+    outline: none;
+    font-size: 16px;
+    font-family: "Itim", sans-serif;
+    border-radius: 20px 0 0 20px;
+}
+
+.search-wrapper .search-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #aa3d3d;
+    color: white;
+    font-family: "Itim", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+    transition: background-color 0.3s;
+}
+
+.search-wrapper .search-btn:hover {
+    background-color: #922b2b;
+}
+
+.flex-item a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.flex-item a:hover {
+    background-color: #aa3d3d;
+}
+
+
+.result {
+    margin-top: 30px;
+    text-align: left;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+
+
+/* กล่องเมนูอาหาร */
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px 0 20px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.menu-item {
+    width: 220px;
+    height: 100px;
+    text-align: center;
+    background-color: #ebdede;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    width: 70px;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+/* food list*/
+.food-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 20px;
+    margin: 5px;
+}
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      background-color: #ddd;
+      padding: 10px;
+    }
+    .grid-item {
+      background-color: rgb(170, 61, 61);
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    a {
+      color: white;
+      text-decoration: none; /* ไม่ขีดเส้นใต้ */
+    }
+
+    a:hover {
+      color: #ffcccb; /* สีเวลาชี้เมาส์, แล้วแต่ความชอบ */
+      text-decoration: underline; /* หรือ none ก็ได้ */
+    }
+
+.mySlides {display:none;}
+
+.food-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+.food-item:hover {
+    transform: translateY(-5px);
+}
+.food-image {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+.food-info {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.food-category {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+.food-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.food-price {
+    font-size: 1.1rem;
+    color: rgb(170, 61, 61);
+    font-weight: bold;
+}
+/*food list*/
+.food-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .food-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+  }
+  
+  .food-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .food-image {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+  }
+
+  .food-info {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .food-category {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+  }
+
+  .food-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .food-price {
+    font-size: 1.1rem;
+    color: #2c7a7b;
+    font-weight: bold;
+  }
+
+.footer {
+  background-color: rgb(170, 61, 61);
+  color: white;
+  padding: 40px 20px;
+  font-family: "Itim", sans-serif;
+  border-radius: 10px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-icons span {
+  margin-right: 10px;
+}
+
+.subscribe {
+  display: flex;
+  margin-top: 10px;
+  max-width: 300px;
+}
+
+.subscribe input {
+  padding: 10px;
+  flex: 1;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+}
+
+.subscribe button {
+  padding: 10px 20px;
+  border: none;
+  background: white;
+  color: #aa3d3d;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.subscribe button:hover {
+  background-color: #922b2b;
+  color: white;
+}
+
